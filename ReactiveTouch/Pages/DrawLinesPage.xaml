@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
              x:Class="ReactiveTouch.Pages.DrawLinesPage">
-               
+
+  <mr:AbsoluteLayout x:Name="MainLayout" BackgroundColor="Gray">
+    <!--<BoxView Color="Yellow"
+           AbsoluteLayout.LayoutBounds="0,0,0.25,0.25"
+           AbsoluteLayout.LayoutFlags="All" />-->
+  </mr:AbsoluteLayout>
   
 </ContentPage>
