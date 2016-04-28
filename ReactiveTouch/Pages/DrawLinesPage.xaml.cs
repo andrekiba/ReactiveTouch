@@ -68,11 +68,7 @@ namespace ReactiveTouch.Pages
 
             #region RectiveX
 
-            Func<EventPattern<DownUpEventArgs>, NGraphics.Point> getPosition = x =>
-			{
-				Debug.WriteLine("X " + x.EventArgs.Center.X + " Y " + x.EventArgs.Center.Y);
-				return new NGraphics.Point(x.EventArgs.Center.X, x.EventArgs.Center.Y);
-			};
+            Func<EventPattern<DownUpEventArgs>, NGraphics.Point> getPosition = x => new NGraphics.Point(x.EventArgs.Center.X, x.EventArgs.Center.Y);
 
 			var points = Observable
 				.FromEventPattern<DownUpEventArgs>(
